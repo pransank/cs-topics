@@ -48,6 +48,16 @@ public class Files02 {
             System.out.println(num);
         }
         */
+
+       PrintWriter output = new PrintWriter("word-list-moby-dick.txt");
+
+        for (String wordToPrint : uniqueWords) {
+            output.println(wordToPrint);
+        }
+
+        output.close();
+
+
         boolean running = true;
         while (running) {
             System.out.println("Enter a word to search number of ocurences: ");
